@@ -71,6 +71,7 @@ function App() {
     const res = await signOut(auth);
     setIsLogin(false);
     setUser(undefined);
+    console.log('res: ', res);
   };
 
   return <div className="App">{isLogin ? <LoginTrue /> : <LoginFalse />}</div>;
